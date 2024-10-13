@@ -1,4 +1,4 @@
-# Base Website 
+# Base Website
 
 <p align="center">
     <a href="./assets/coverage.svg" alt="Coverage">
