@@ -9,6 +9,75 @@
     <!-- <link rel="stylesheet" href="{{ url_for('static', path='tailwind.css') }}" type="text/css" /> -->
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Hello World</h1>
+
+    <div class="flex h-screen">
+        <div class="flex-none w-56">
+            <ul class="menu bg-base-100 w-56 p-0">
+                <ul>
+                    <li class="menu-title bg-primary text-lg text-white">Analytics</h2>
+                </ul>
+                <ul class="bg-black text-white">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+                <ul class="text-black">
+                    <li><a>Sub-item 1</a></li>
+                    <li><a>Sub-item 2</a></li>
+                    <li><a>Sub-item 3</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="grow pl-4 pr-4 pt-10">
+            <h1 class="text-5xl font-normal">Content Area</h1>
+
+            <div class="flex">
+                <h2 class="text-2xl font-bold pt-10">Subsection 1</h2>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="grid grid-cols-2">
+                <div>
+                    chart 1
+                </div>
+                <div>
+                    chart 2
+                </div>
+                <div>
+                    chart 3
+                </div>
+                <div>
+                    chart 4
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- <div class="grid grid-cols-2 h-screen">
+        <div>
+            <ul class="menu bg-base-200 rounded-box w-56">
+                <li>
+                <h2 class="menu-title">Title</h2>
+                <ul>
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h1 class="text-2xl font-bold">Content Area</h1>
+            <p class="mt-4">This is where your main content goes. You can add text, images, or any other elements here.</p>
+        </div>
+    </div> -->
+
 </body>
 </html>
