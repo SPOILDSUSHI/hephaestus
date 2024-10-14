@@ -9,7 +9,9 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.115.2"
 sqlmodel = "^0.0.22"
-uvicorn = "^0.31.1"
+uvicorn = {extras = ["uvloop"], version = "^0.31.1"}
+redis = {extras = ["hiredis"], version = "^5.1.1"}
+plotly = "^5.24.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
