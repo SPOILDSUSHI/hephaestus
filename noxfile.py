@@ -6,8 +6,10 @@ import sys
 from pathlib import Path
 from textwrap import dedent
 
+
 try:
-    from nox_poetry import Session, session
+    from nox_poetry import Session
+    from nox_poetry import session
 except ImportError:
     message = f"""\
     Nox failed to import the 'nox-poetry' package.
@@ -19,7 +21,7 @@ except ImportError:
 
 
 python_versions = ["3.11"]
-package = "plutus_apim"
+package = "app"
 
 
 def activate_virtualenv_in_precommit_hooks(session: Session) -> None:
@@ -127,9 +129,10 @@ def precommit(session: Session) -> None:
 @session(python=python_versions[0])
 def safety(session: Session) -> None:
     """Scan dependencies for insecure packages."""
-    requirements = session.poetry.export_requirements()
+    # requirements = session.poetry.export_requirements()
     session.install("safety")
-    session.run("safety", "check", "--full-report", f"--file={requirements}")
+    session.run("safety", "scan")
+    # "--full-report", f"--file={requirements}"
 
 
 @session(python=python_versions)
