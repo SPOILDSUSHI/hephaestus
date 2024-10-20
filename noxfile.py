@@ -20,7 +20,7 @@ except ImportError:
     raise SystemExit(dedent(message)) from None
 
 
-python_versions = ["3.11"]
+python_versions = ["3.12"]
 package = "app"
 
 

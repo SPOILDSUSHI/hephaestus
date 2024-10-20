@@ -1,11 +1,10 @@
-import os
-
 import plotly.graph_objects as go
 
-from ..util.html import output_html
+from ..util.decorators import output_html
 
 
-def main() -> str:
+@output_html
+def my_first_graph() -> go.Figure:
     """
     1. Get the data
     2. manipulate/format into x vs y
@@ -24,4 +23,4 @@ def main() -> str:
 
     fig.update_layout(title="My first chart")
 
-    return output_html(fig=fig, div_id=os.path.basename(__file__).removesuffix(".py"))
+    return fig
