@@ -55,6 +55,12 @@ pretty = true
 show_column_numbers = true
 show_error_context = true
 
+[[tool.mypy.overrides]]
+module = [
+    "plotly.*"
+]
+ignore_missing_imports = true
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
