@@ -4,8 +4,7 @@ from typing import Any
 
 import plotly.io as pio
 
-
-GRAPH_REGISTRY = {}
+from ..graphs import GRAPH_REGISTRY
 
 
 def output_html[**P, T](func: Callable[P, T]) -> Callable[P, str]:

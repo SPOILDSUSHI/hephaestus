@@ -1,7 +1,7 @@
 import pytest  # noqa: F401
 
+from backend.app.graphs import GRAPH_REGISTRY
 from backend.app.graphs import my_first_graph
-from backend.app.util.decorators import GRAPH_REGISTRY
 
 
 def test_decorator() -> None:
