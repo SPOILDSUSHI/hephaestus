@@ -1,9 +1,9 @@
 import plotly.graph_objects as go
 
-from ..util.decorators import output_html
+from ..util.decorators import graph
 
 
-@output_html
+@graph
 def my_first_graph() -> go.Figure:
     """
     1. Get the data
